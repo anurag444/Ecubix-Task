@@ -91,7 +91,7 @@ public class EmployeeListAdapter extends RecyclerView.Adapter<EmployeeListAdapte
                 String pattern = constraint.toString().toLowerCase().trim();
 
                 for (Detail detail : fullEmployees){
-                    if (detail.getVarDrName().toLowerCase().contains(pattern) || detail.getVarCity().toLowerCase().contains(pattern)){
+                    if (detail.getVarEmpName().toLowerCase().contains(pattern) || detail.getVarCity().toLowerCase().contains(pattern)){
                         filteredList.add(detail);
                     }
                 }
